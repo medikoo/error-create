@@ -1,5 +1,5 @@
 # error-create
-## Create custom JavaScript errors
+## Utility for creating custom JavaScript errors
 ### Usage
 
 ```javascript
