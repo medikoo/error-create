@@ -8,11 +8,11 @@ var MyCustomError = require('error-create')('MyCustomError');
 try {
   throw new MyCustomError("My message", 'MY_CODE', { foo: 'bar' });
 } catch (e) {
-  console.log(e instanceof Error); // true
+  console.log(e instanceof Error);         // true
   console.log(e instanceof MyCustomError); // true
-  console.log(String(e)); // 'MyCustomError: My message'
-  console.log(e.code); // 'MY_CODE'
-  console.log(e.foo); // 'bar'
+  console.log(String(e));                  // 'MyCustomError: My message'
+  console.log(e.code);                     // 'MY_CODE'
+  console.log(e.foo);                      // 'bar'
 }
 ```
 
