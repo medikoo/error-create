@@ -1,4 +1,4 @@
-# error-error
+# error-create
 ## Create custom JavaScript errors
 ### Usage
 

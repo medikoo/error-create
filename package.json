@@ -1,5 +1,5 @@
 {
-  "name": "abstract-error",
+  "name": "error-create",
   "version": "0.0.0",
   "description": "Abstraction for creating custom JavaScript errors",
   "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
