@@ -1,0 +1,27 @@
+{
+  "name": "abstract-error",
+  "version": "0.0.0",
+  "description": "Abstraction for creating custom JavaScript errors",
+  "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/medikoo/abstract-error.git"
+  },
+  "scripts": {
+    "test": "node ./node_modules/tad/bin/tad"
+  },
+  "keywords": [
+    "error",
+    "custom",
+    "exception",
+    "validation"
+  ],
+  "dependencies": {
+    "d": "git://github.com/medikoo/d",
+    "es5-ext": "git://github.com/medikoo/es5-ext"
+  },
+  "devDependencies": {
+    "tad": "~0.1.19"
+  },
+  "license": "MIT"
+}
