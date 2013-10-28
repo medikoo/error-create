@@ -1,7 +1,8 @@
 'use strict';
 
-var assign = require('es5-ext/object/assign')
-  , d      = require('d/d')
+var assign         = require('es5-ext/object/assign')
+  , setPrototypeOf = require('es5-ext/object/set-prototype-of')
+  , d              = require('d/d')
 
   , captureStackTrace = Error.captureStackTrace
   , AbstractError;
@@ -26,6 +27,7 @@ AbstractError = function AbstractError(message/*, code, ext*/) {
 	this.name = this.constructor.name;
 	if (captureStackTrace) captureStackTrace(this, this.constructor);
 };
+if (setPrototypeOf) setPrototypeOf(AbstractError, Error);
 
 AbstractError.prototype = Object.create(Error.prototype, {
 	constructor: d(AbstractError)

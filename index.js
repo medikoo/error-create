@@ -1,7 +1,8 @@
 'use strict';
 
-var AbstractError = require('./abstract')
-  , d             = require('d/d')
+var setPrototypeOf = require('es5-ext/object/set-prototype-of')
+  , d              = require('d/d')
+  , AbstractError  = require('./abstract')
 
   , isNameValid = RegExp.prototype.test.bind(/^[A-Z][a-zA-Z0-9]*Error$/)
   , create = Object.create;
@@ -21,6 +22,8 @@ module.exports = function (name) {
 		err.name = name;
 		return err;
 	};
+	if (setPrototypeOf) setPrototypeOf(CustomError, AbstractError);
+
 	CustomError.prototype = create(AbstractError.prototype, {
 		constructor: d(CustomError)
 	});
