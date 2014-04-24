@@ -1,7 +1,7 @@
 'use strict';
 
 var setPrototypeOf = require('es5-ext/object/set-prototype-of')
-  , d              = require('d/d')
+  , d              = require('d')
   , AbstractError  = require('./abstract')
 
   , isNameValid = RegExp.prototype.test.bind(/^[A-Z][a-zA-Z0-9]*Error$/)
