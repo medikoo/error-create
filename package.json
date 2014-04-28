@@ -1,6 +1,6 @@
 {
   "name": "error-create",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Abstraction for creating custom JavaScript errors",
   "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
   "keywords": [
