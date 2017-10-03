@@ -14,11 +14,11 @@
     "url": "git://github.com/medikoo/abstract-error.git"
   },
   "dependencies": {
-    "d": "~0.1.1",
-    "es5-ext": "~0.10.8"
+    "d": "1",
+    "es5-ext": "~0.10.30"
   },
   "devDependencies": {
-    "tad": "0.2.4",
+    "tad": "~0.2.7",
     "xlint": "~0.2.2",
     "xlint-jslint-medikoo": "~0.1.4"
   },
